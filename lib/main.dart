@@ -22,6 +22,13 @@ class MainApp extends StatelessWidget {
               },
               child: const Text('Home - setMinusValue'),
             ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                HomeMethod.listWeek();
+              },
+              child: const Text('Home - List Week'),
+            ),
           ],
         ),
       ),

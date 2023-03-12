@@ -6,3 +6,4 @@ Semoga bisa membantu.
 Course: [Money Record](https://www.youtube.com/watch?v=fDXrfOWGv9U&list=PLMeCG4xYek-PCLmGja0j5FMZdvvMUebq_&index=15)
 
 1. [Set Minus for Value](https://youtu.be/59bEzyGEcWM)
+2. [Casting list double \[Week Chart\]](https://youtu.be/HKmazIXe40w)

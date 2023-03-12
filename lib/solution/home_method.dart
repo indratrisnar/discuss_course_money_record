@@ -1,4 +1,5 @@
 import 'package:d_method/d_method.dart';
+import 'package:get/get.dart';
 
 class HomeMethod {
   /// to set minus value\
@@ -53,4 +54,37 @@ class HomeMethod {
       'percent: $percentString \n amount: $amountString',
     );
   }
+
+  // ================================================================================================
+  // var RxList<double>
+  static final _week = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0].obs;
+
+  // getter var RxList<double>
+  static List<double> get week => _week.value;
+
+  /// problem on key and value list week for chart
+  static listWeek() {
+    Map responseBody = {
+      'week': [2.0, 3.3, 0, 0, 0, 0, 0],
+    };
+
+    // List listWeek = responseBody['week'];
+    // _week.value = List<double>.from(
+    //   responseBody['week'].map((e) {
+    //     num value = e as num;
+    //     return value.toDouble();
+    //   }).toList(),
+    // );
+
+    _week.value = List.castFrom(
+      responseBody['week'].map((e) => (e as num).toDouble()).toList(),
+    );
+
+    try {
+      print('success');
+    } catch (e) {
+      print(e.toString());
+    }
+  }
+  // ================================================================================================
 }
